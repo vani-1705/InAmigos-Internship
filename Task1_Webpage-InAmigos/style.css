@@ -1,7 +1,6 @@
 /* ==============================================
    InAmigos Foundation – style.css
-================================================= */
-
+================================================*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -83,7 +82,7 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 6px 18px rgba(244, 121, 58, 0.4);
 }
 
-/* ===== DONATE SCANNER ===== */
+/* ===== DONATE ===== */
 .donate-modal {
   display: none;
   position: fixed;
@@ -190,7 +189,7 @@ img { max-width: 100%; display: block; }
 .btn-secondary:hover { background: rgba(255,255,255,0.15); transform: translateY(-3px); }
 .btn-primary.big { font-size: 1.05rem; padding: 16px 38px; margin-top: 10px; }
 
-/* ===== CONTACT SECTION ===== */
+/* ===== CONTACT ===== */
 .contact-strip {
   background: var(--purple);
   color: #fff;
@@ -436,6 +435,9 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
+
+/* ---- LAPTOP (default, >1024px) ---- */
+/* ===== TABLET / iPAD ===== */
 @media (max-width: 1024px) {
   .navbar { padding: 14px 4%; }
   .navbar nav { gap: 16px; }
@@ -450,7 +452,7 @@ footer {
   .hero-content { flex-direction: column-reverse; }
 }
 
-/* ===== For PHONE ===== */
+/* ===== FOR LARGE PHONE ===== */
 @media (max-width: 700px) {
   .navbar {
     flex-wrap: nowrap;
@@ -467,8 +469,15 @@ footer {
     font-size: 0.75rem;
     white-space: nowrap;
   }
-
-  /* ===== Nav 3 LINES ===== */
+   
+/* ===== FOR SMALL PHONE ===== */
+@media (max-width: 380px) {
+  .logo-img { width: 42px; height: 42px; }
+  .btn-donate { padding: 7px 12px; font-size: 0.7rem; }
+  .navbar nav a { font-size: 0.75rem; }
+ }   
+   
+  /* ===== NAV 3-lines ===== */
   #main-nav {
     order: 3;
     width: 100%;
@@ -488,10 +497,4 @@ footer {
   .footer-grid { grid-template-columns: 1fr; }
   .hero-image img {min-height:220px; aspect-ratio: 16/10;}
   .project-img, .video-card video {height: 200px;}
-}
-
-@media (max-width: 380px) {
-  .logo-img { width: 42px; height: 42px; }
-  .btn-donate { padding: 7px 12px; font-size: 0.7rem; }
-  .navbar nav a { font-size: 0.75rem; }
 }
