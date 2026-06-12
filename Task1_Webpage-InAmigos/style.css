@@ -504,6 +504,7 @@ footer {
   .menu-toggle {
     display: flex;
   }
+}
 /* ===== FOR SMALL PHONE ===== */
 @media (max-width: 380px) {
   .logo-img { width: 42px; height: 42px; }
