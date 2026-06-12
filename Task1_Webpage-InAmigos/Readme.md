@@ -1,4 +1,4 @@
-# Task1_Static-Webpage-Designing
+# Task1_Wepage-InAmigos
 
 # 🌟 InAmigos Foundation — NGO Awareness Webpage
 
