@@ -1,6 +1,6 @@
 # 🌟 InAmigos Foundation — NGO Awareness Webpage
 
-This repository contains a AI WEB DEVELOPMENT project developed during the Project Vikas Frontend Development Internship at InAmigos Foundation.
+This repository contains a Web development projects developed during the Project Vikas AI Web Development Internship at InAmigos Foundation.
 
 ---
 
