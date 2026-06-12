@@ -504,15 +504,7 @@ footer {
   .menu-toggle {
     display: flex;
   }
-}
-/* ===== FOR SMALL PHONE ===== */
-@media (max-width: 380px) {
-  .logo-img { width: 42px; height: 42px; }
-  .btn-donate { padding: 7px 12px; font-size: 0.7rem; }
-  .navbar nav a { font-size: 0.85rem; }
-}
-   
-  /* ===== Nav becomes dropdown ===== */
+     /* ===== Nav becomes dropdown ===== */
   #main-nav {
     display: none;
     position: absolute;
@@ -540,3 +532,11 @@ footer {
   .hero-image img {min-height:220px; aspect-ratio: 16/10;}
   .project-img, .video-card video {height: 200px;}
 }
+}
+/* ===== FOR SMALL PHONE ===== */
+@media (max-width: 380px) {
+  .logo-img { width: 42px; height: 42px; }
+  .btn-donate { padding: 7px 12px; font-size: 0.7rem; }
+  .navbar nav a { font-size: 0.85rem; }
+}
+   
