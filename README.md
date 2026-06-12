@@ -4,7 +4,7 @@ This repository contains a Web development projects developed during the Project
 
 ---
 
-## 📌 Task 1: Static Webpage Designing Using HTML & CSS
+## 📌 Task 1: Webpage-InAmigos
 
 As part of Task 1, a static awareness webpage was created using HTML and CSS to showcase the mission, projects, social impact, and volunteer opportunities of InAmigos Foundation through a clean, responsive, and user-friendly design.
 
