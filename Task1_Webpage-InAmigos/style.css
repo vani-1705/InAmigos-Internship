@@ -436,13 +436,62 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .navbar { padding: 14px 4%; }
+  .navbar nav { gap: 16px; }
+  .navbar nav a { font-size: 0.85rem; }
+  .btn-donate { padding: 9px 18px; font-size: 0.85rem; }
+  .hero { padding: 50px 4%; }
+  .about, .projects, .impact, .videos, .getinvolved { padding: 50px 4%; }
+}
+
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero-content { flex-direction: column-reverse; }
 }
+
+/* ===== For PHONE ===== */
 @media (max-width: 700px) {
-  .navbar nav { display: none; }
+  .navbar {
+    flex-wrap: nowrap;
+    padding: 10px 4%;
+    justify-content: space-between;
+  }
+
+  .logo-area { flex: 0 0 auto; }
+  .logo-img { width: 50px; height: 50px; }
+
+  .btn-donate {
+    order: 2;
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  /* ===== Nav 3 LINES ===== */
+  #main-nav {
+    order: 3;
+    width: 100%;
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 6px 10px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .navbar nav a {
+    font-size: 0.8rem;
+    padding: 4px 0;
+  }
+
   .footer-grid { grid-template-columns: 1fr; }
   .hero-image img {min-height:220px; aspect-ratio: 16/10;}
-  .project-img, .vieo-card video {height: 200px;}
- }
+  .project-img, .video-card video {height: 200px;}
+}
+
+@media (max-width: 380px) {
+  .logo-img { width: 42px; height: 42px; }
+  .btn-donate { padding: 7px 12px; font-size: 0.7rem; }
+  .navbar nav a { font-size: 0.75rem; }
+}
