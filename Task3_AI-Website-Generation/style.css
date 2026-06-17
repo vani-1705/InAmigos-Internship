@@ -35,7 +35,7 @@ nav {
   text-decoration: none; flex-shrink: 0; cursor: pointer;
 }
 .nav-logo img {
-  width: 40px; height: 40px; object-fit: contain; border-radius: 8px;
+  width: 150px; height: 100px; object-fit: contain; border-radius: 8px;
 }
 .nav-logo-fallback {
   width: 40px; height: 40px;
@@ -109,7 +109,7 @@ section.active { display: block; }
   margin-bottom: 18px; letter-spacing: 0.3px; border: 1px solid #F5D060;
 }
 .hero-logo-row { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
-.hero-logo-img { width: 70px; height: 70px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 16px rgba(200,140,0,0.2); }
+.hero-logo-img { width: 200px; height: 120px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 16px rgba(200,140,0,0.2); }
 .hero-logo-fallback {
   width: 70px; height: 70px;
   background: linear-gradient(135deg, var(--gold), var(--amber));
