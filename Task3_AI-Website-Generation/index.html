@@ -6,7 +6,7 @@
 <title>InAmigos Foundation – Uniting Minds for a Change</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <!-- All styles in one external file -->
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -594,7 +594,7 @@
     <p>Scan the QR code below or use UPI to donate. Every rupee creates real change.</p>
 
     <div class="scanner-frame">
-      <img src="assets/upi-qr.png" alt="UPI QR Code" style="width:180px;height:180px;object-fit:contain;margin:0 auto;display:block;border-radius:12px;"
+      <img src="Images/Scanner.png" alt="UPI QR Code" style="width:180px;height:180px;object-fit:contain;margin:0 auto;display:block;border-radius:12px;"
            onerror="this.style.display='none'; document.getElementById('qrPlaceholder').style.display='block';">
       <div id="qrPlaceholder" style="display:none;">
         <span class="scan-icon">📱</span>
@@ -637,9 +637,7 @@
   <button class="chat-toggle-btn" onclick="toggleChat()" title="AI Chat">🤖</button>
 </div>
 
-<!-- ⚠️  config.js must load BEFORE app.js — it sets window.ENV with the API key -->
-<!-- config.js is in .gitignore so your key stays safe and off GitHub            -->
 <script src="config.js"></script>
-<script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
