@@ -35,7 +35,7 @@ nav {
   text-decoration: none; flex-shrink: 0; cursor: pointer;
 }
 .nav-logo img {
-  width: 150px; height: 80px; object-fit: contain; border-radius: 8px;
+  width: 150px; height: 75px; object-fit: contain; border-radius: 8px;
 }
 .nav-logo-fallback {
   width: 40px; height: 40px;
