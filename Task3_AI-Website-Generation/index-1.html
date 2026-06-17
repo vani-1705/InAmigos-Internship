@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InAmigos Foundation – Uniting Minds for a Change</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<!-- All styles in one external file -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showSection('home')">
+      <img src="assets/logo.png" alt="InAmigos Logo"
+           onerror="this.style.display='none'; document.getElementById('navLogoFallback').style.display='flex';">
+      <div class="nav-logo-fallback" id="navLogoFallback" style="display:none;">🤝</div>
+      <div class="nav-logo-text">InAmigos<span>Foundation</span></div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="showSection('home')" data-page="home" class="active">🏡 Home</a></li>
+      <li><a onclick="showSection('about')" data-page="about">📖 About Us</a></li>
+      <li><a onclick="showSection('works')" data-page="works">🛠️ Our Works</a></li>
+      <li><a onclick="showSection('impact')" data-page="impact">📈 Impact</a></li>
+      <li><a onclick="showSection('videos')" data-page="videos">▶️ Videos</a></li>
+      <li><a onclick="showSection('memory')" data-page="memory">🧠 Memory</a></li>
+      <li><a onclick="showSection('faqs')" data-page="faqs">❓ FAQs</a></li>
+      <li><a onclick="showSection('contact')" data-page="contact">📞 Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="btn-chat-nav" onclick="toggleChat()">🤖 AI Chat</button>
+      <button class="btn-donate-nav" onclick="openDonateModal()">❤️ Donate Now</button>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showSection('home'); closeMobile()">🏡 Home</a>
+  <a onclick="showSection('about'); closeMobile()">📖 About Us</a>
+  <a onclick="showSection('works'); closeMobile()">🛠️ Our Works</a>
+  <a onclick="showSection('impact'); closeMobile()">📈 Impact</a>
+  <a onclick="showSection('videos'); closeMobile()">▶️ Videos</a>
+  <a onclick="showSection('memory'); closeMobile()">🧠 Memory</a>
+  <a onclick="showSection('faqs'); closeMobile()">❓ FAQs</a>
+  <a onclick="showSection('contact'); closeMobile()">📞 Contact</a>
+  <div class="mobile-btns">
+    <button class="btn-chat-nav" onclick="toggleChat(); closeMobile()">🤖 AI Chat</button>
+    <button class="btn-donate-nav" onclick="openDonateModal(); closeMobile()">❤️ Donate</button>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== HOME ===== -->
+<section id="home" class="active">
+  <div class="hero">
+    <div class="hero-inner">
+
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-logo-row">
+          <img src="assets/logo.png" alt="InAmigos" class="hero-logo-img"
+               onerror="this.style.display='none'; document.getElementById('heroLogoFallback').style.display='flex';">
+          <div class="hero-logo-fallback" id="heroLogoFallback" style="display:none;">🤝</div>
+        </div>
+
+        <div class="hero-badge">🏛️ Section 8 NGO · 80G & 12A Certified · Est. 2020</div>
+
+        <h1>Uniting Minds<br>for a <em>Change</em></h1>
+
+        <p class="hero-desc">InAmigos Foundation is a youth-led NGO dedicated to transforming lives through education, women empowerment, environmental conservation, animal welfare, and youth development — active across 28 states of India.</p>
+
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="window.open('https://forms.gle/AB4c1hLaDDmtrKGU7','_blank')">🙋 Volunteer With Us</button>
+          <button class="btn-secondary" onclick="window.open('https://inamigosfoundation.org.in/became-volunteer','_blank')">👥 Join the Team</button>
+        </div>
+
+        <div class="home-stats">
+          <div class="home-stat"><span class="stat-num">50K+</span><span class="stat-label">Beneficiaries</span></div>
+          <div class="home-stat"><span class="stat-num">28</span><span class="stat-label">States</span></div>
+          <div class="home-stat"><span class="stat-num">30K+</span><span class="stat-label">Interns</span></div>
+          <div class="home-stat"><span class="stat-num">6</span><span class="stat-label">Projects</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT – SINGLE IMAGE -->
+      <div class="hero-right">
+        <div class="hero-image-frame">
+          <img src="assets/hero.jpg" alt="InAmigos volunteers"
+               onerror="this.style.display='none'; document.getElementById('heroImgPlaceholder').style.display='block';">
+          <div class="hero-image-placeholder" id="heroImgPlaceholder" style="display:none;">
+            <span class="big-icon">🤝</span>
+            <p>Add your hero image at<br><strong>assets/hero.jpg</strong></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GET INVOLVED CARDS -->
+  <div class="get-involved-section">
+    <div class="get-involved-inner">
+      <div class="section-eyebrow">Get Involved</div>
+      <div class="section-title">Be Part of the Change</div>
+      <div class="gi-grid">
+        <div class="gi-card" onclick="window.open('https://forms.gle/AB4c1hLaDDmtrKGU7','_blank')">
+          <div class="gi-card-icon">🙋</div>
+          <h4>Volunteer</h4>
+          <p>Join our ground team and create real social impact in your community</p>
+        </div>
+        <div class="gi-card" onclick="openDonateModal()">
+          <div class="gi-card-icon">❤️</div>
+          <h4>Donate</h4>
+          <p>Your contribution educates children, feeds families & empowers women</p>
+        </div>
+        <div class="gi-card" onclick="showSection('works')">
+          <div class="gi-card-icon">🛠️</div>
+          <h4>Our Programs</h4>
+          <p>Six flagship projects — Seva, Bachpanshala, Jeev, Udaan, Prakriti, Vikas</p>
+        </div>
+        <div class="gi-card" onclick="showSection('contact')">
+          <div class="gi-card-icon">📞</div>
+          <h4>Contact Us</h4>
+          <p>Reach us for partnerships, queries, or to learn more about our work</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="page-hero">
+    <div class="hero-badge">📖 Our Story</div>
+    <h1>About InAmigos Foundation</h1>
+    <p>A youth-driven movement built on compassion, integrity, and collective action for lasting social change.</p>
+  </div>
+  <div class="section-wrap">
+    <h2>Who We Are</h2>
+    <p>Founded on September 23, 2020 by <strong>Mr. Govind Shukla</strong>, InAmigos Foundation was born from the belief that a more equal society is possible when people act together. Operating from Bilaspur, Chhattisgarh, we address India's most pressing social issues — poverty, lack of education, gender inequality, animal suffering, and environmental degradation.</p>
+    <p>We are one of India's fastest-growing youth-led NGOs, uniting volunteers, professionals, students, and community leaders toward a single purpose: lasting, dignified change for those who need it most. Through our six flagship projects, we have reached 50,000+ beneficiaries across 28 states.</p>
+
+    <div class="vmg-grid">
+      <div class="vmg-card">
+        <h4>🎯 Our Vision</h4>
+        <p>To build an inclusive society where every individual has the opportunity to learn, grow, and achieve their full potential regardless of their background.</p>
+      </div>
+      <div class="vmg-card">
+        <h4>🚀 Our Mission</h4>
+        <p>To uplift underprivileged communities by providing access to education, skill development, healthcare awareness, environmental sustainability, and social support programs.</p>
+      </div>
+      <div class="vmg-card">
+        <h4>🌟 Our Goal</h4>
+        <p>Expand city by city, build a strong volunteer base, and create lasting impact for millions across India through sustainable community programs.</p>
+      </div>
+    </div>
+
+    <h2>Our Core Values</h2>
+    <div class="values-grid">
+      <div class="value-pill"><div class="vi">💛</div><h5>Compassion</h5><p>We serve with empathy and care</p></div>
+      <div class="value-pill"><div class="vi">✅</div><h5>Integrity</h5><p>Transparency and accountability first</p></div>
+      <div class="value-pill"><div class="vi">🌍</div><h5>Inclusion</h5><p>Everyone deserves equal opportunity</p></div>
+      <div class="value-pill"><div class="vi">🌱</div><h5>Sustainability</h5><p>Focus on long-term impact</p></div>
+      <div class="value-pill"><div class="vi">🚀</div><h5>Empowerment</h5><p>Building self-reliance & confidence</p></div>
+    </div>
+
+    <div class="cert-row" style="margin-top:32px;">
+      <span class="cert-badge">80G & 12A Certified</span>
+      <span class="cert-badge">CSR-1 Registered</span>
+      <span class="cert-badge">NITI Aayog Registered</span>
+      <span class="cert-badge">ISO 9001:2015</span>
+      <span class="cert-badge">Section 8 NGO · CG</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR WORKS ===== -->
+<section id="works">
+  <div class="page-hero">
+    <div class="hero-badge">🛠️ Six Programmes. One Purpose.</div>
+    <h1>Our Works & Projects</h1>
+    <p>Each initiative addresses a distinct social challenge — together creating a complete ecosystem of upliftment.</p>
+  </div>
+  <div class="works-grid">
+    <div class="work-card">
+      <div class="work-card-bar" style="background:#E8A820;"></div>
+      <div class="work-card-body">
+        <div class="work-card-icon">🍚</div>
+        <h3>Project Seva</h3>
+        <p>Serving humanity with compassion — food distribution drives, clothing donations, essential supplies, and community support initiatives. Our volunteers run regular campaigns to ensure basic necessities reach those who need them most.</p>
+        <span class="work-card-tag">🫶 Food & Clothing Drives</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-bar" style="background:#1A6FA8;"></div>
+      <div class="work-card-body">
+        <div class="work-card-icon">📚</div>
+        <h3>Project Bachpanshala</h3>
+        <p>Education is the foundation of a brighter future. Supporting underprivileged children through educational assistance, school supplies, digital literacy awareness, and mentorship opportunities to ensure every child gets quality education.</p>
+        <span class="work-card-tag">🎓 Education for Every Child</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-bar" style="background:#9B59B6;"></div>
+      <div class="work-card-body">
+        <div class="work-card-icon">🦋</div>
+        <h3>Project Udaan</h3>
+        <p>Empowering women for a better future — skill development training, leadership programs, career guidance, entrepreneurship awareness, and personal development workshops to help women gain confidence and independence.</p>
+        <span class="work-card-tag">💪 Women's Empowerment</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-bar" style="background:#1E6E4B;"></div>
+      <div class="work-card-body">
+        <div class="work-card-icon">🌳</div>
+        <h3>Project Prakriti</h3>
+        <p>Environmental sustainability is a shared responsibility. We organise tree plantation drives, cleanliness campaigns, environmental awareness programs, waste management initiatives, and community participation activities for a greener future.</p>
+        <span class="work-card-tag">🌍 Environmental Conservation</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-bar" style="background:#E74C3C;"></div>
+      <div class="work-card-body">
+        <div class="work-card-icon">🐾</div>
+        <h3>Project Jeev</h3>
+        <p>Animals are an important part of our ecosystem and deserve compassion. Project Jeev works on animal rescue initiatives, welfare awareness, regular feeding programs, and community engagement for animal protection across cities.</p>
+        <span class="work-card-tag">🐕 Animal Rescue & Care</span>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-bar" style="background:#F39C12;"></div>
+      <div class="work-card-body">
+        <div class="work-card-icon">🚀</div>
+        <h3>Project Vikas</h3>
+        <p>Building future leaders — designed for students and young professionals seeking growth. Internship opportunities, skill-building workshops, career guidance sessions, leadership development, and professional networking. 30,000+ interns impacted.</p>
+        <span class="work-card-tag">📈 30,000+ Interns Trained</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT ===== -->
+<section id="impact">
+  <div class="page-hero">
+    <div class="hero-badge">📊 Our Numbers</div>
+    <h1>The Impact We've Made</h1>
+    <p>Every number here is a life touched, a dream supported, and a community uplifted.</p>
+  </div>
+  <div class="impact-numbers">
+    <div class="impact-num"><h2>50K+</h2><p>Beneficiaries Reached</p></div>
+    <div class="impact-num"><h2>28</h2><p>States Covered</p></div>
+    <div class="impact-num"><h2>30K+</h2><p>Interns Trained</p></div>
+    <div class="impact-num"><h2>250+</h2><p>Permanent Team Members</p></div>
+    <div class="impact-num"><h2>6</h2><p>Flagship Projects</p></div>
+    <div class="impact-num"><h2>100+</h2><p>Campaigns Completed</p></div>
+    <div class="impact-num"><h2>1000+</h2><p>Students Supported</p></div>
+    <div class="impact-num"><h2>∞</h2><p>Lives Inspired</p></div>
+  </div>
+  <div class="impact-why">
+    <h2>Why This Work Matters</h2>
+    <ul class="impact-list">
+      <li>
+        <div class="impact-icon">📖</div>
+        <div class="impact-text">
+          <strong>Breaking the Poverty–Education Cycle</strong>
+          <span>Millions of children miss school due to poverty. Project Bachpanshala bridges that gap with free educational support, supplies, and mentorship — ensuring no child is left behind.</span>
+        </div>
+      </li>
+      <li>
+        <div class="impact-icon">👩</div>
+        <div class="impact-text">
+          <strong>Unlocking Women's Potential</strong>
+          <span>Through Project Udaan, women gain the skills and confidence to become economically independent — transforming families and communities from within.</span>
+        </div>
+      </li>
+      <li>
+        <div class="impact-icon">🌱</div>
+        <div class="impact-text">
+          <strong>Healing the Environment</strong>
+          <span>Project Prakriti's tree plantation drives and awareness campaigns restore green cover while educating communities on sustainable living — one sapling at a time.</span>
+        </div>
+      </li>
+      <li>
+        <div class="impact-icon">🍽️</div>
+        <div class="impact-text">
+          <strong>Nourishing the Hungry</strong>
+          <span>Project Seva's food drives ensure underprivileged families and the homeless have access to nutritious meals, warm clothing, and essential supplies regularly.</span>
+        </div>
+      </li>
+      <li>
+        <div class="impact-icon">🚀</div>
+        <div class="impact-text">
+          <strong>Building the Leaders of Tomorrow</strong>
+          <span>Project Vikas has empowered 30,000+ young individuals with practical internship experience, professional skills, and career confidence — shaping India's future workforce.</span>
+        </div>
+      </li>
+    </ul>
+    <div style="text-align:center; margin-top:36px;">
+      <button class="btn-primary" onclick="openDonateModal()">❤️ Support Our Work</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEOS ===== -->
+<section id="videos">
+  <div class="page-hero">
+    <div class="hero-badge">▶️ InAmigos in Action</div>
+    <h1>Our Videos</h1>
+    <p>Watch our campaigns, events, and impact stories come to life.</p>
+  </div>
+  <div class="videos-grid">
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <!-- Option A – local file: <video src="assets/videos/video1.mp4" controls></video> -->
+        <!-- Option B – YouTube: <iframe src="https://www.youtube.com/embed/YOUR_ID" frameborder="0" allowfullscreen></iframe> -->
+        <div class="play-placeholder">
+          <span class="play-icon">▶️</span>
+          <p>Add video path here<br><strong>Video 1</strong></p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h4>Project Seva – Food Drive</h4>
+        <p>Feeding families across Bilaspur</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="play-placeholder">
+          <span class="play-icon">▶️</span>
+          <p>Add video path here<br><strong>Video 2</strong></p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h4>Project Bachpanshala</h4>
+        <p>Education drives for underprivileged children</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="play-placeholder">
+          <span class="play-icon">▶️</span>
+          <p>Add video path here<br><strong>Video 3</strong></p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h4>Project Udaan</h4>
+        <p>Women empowerment workshops</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="play-placeholder">
+          <span class="play-icon">▶️</span>
+          <p>Add video path here<br><strong>Video 4</strong></p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h4>Project Prakriti</h4>
+        <p>Tree plantation drive highlights</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="play-placeholder">
+          <span class="play-icon">▶️</span>
+          <p>Add video path here<br><strong>Video 5</strong></p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h4>Project Jeev</h4>
+        <p>Animal welfare & rescue stories</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="play-placeholder">
+          <span class="play-icon">▶️</span>
+          <p>Add video path here<br><strong>Video 6</strong></p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h4>Project Vikas</h4>
+        <p>Intern testimonials & skill development</p>
+      </div>
+    </div>
+
+  </div>
+  <p style="text-align:center; color:var(--stone); font-size:13px; padding-bottom:32px;">
+    💡 To add videos: replace the placeholder comments with<br>
+    <code style="background:var(--gold-lt);padding:2px 8px;border-radius:4px;color:var(--amber);">&lt;video src="assets/videos/yourfile.mp4" controls&gt;&lt;/video&gt;</code>
+    or a YouTube embed.
+  </p>
+</section>
+
+<!-- ===== MEMORY ===== -->
+<section id="memory">
+  <div class="memory-hero">
+    <h1>🧠 Memory</h1>
+    <p>Save your details and view your saved AI chat conversations here.</p>
+  </div>
+  <div class="memory-wrap">
+    <div class="memory-box">
+      <h3>Your Details</h3>
+      <label>Name</label>
+      <input type="text" id="memName" placeholder="Your full name">
+      <label>Age</label>
+      <input type="number" id="memAge" placeholder="Your age">
+      <label>Email</label>
+      <input type="email" id="memEmail" placeholder="Your email address">
+      <label>Area of Interest</label>
+      <select id="memInterest">
+        <option value="">Select interest</option>
+        <option value="Education">Education (Bachpanshala)</option>
+        <option value="Food Relief">Food Relief (Seva)</option>
+        <option value="Women's Empowerment">Women's Empowerment (Udaan)</option>
+        <option value="Environment">Environment (Prakriti)</option>
+        <option value="Animal Welfare">Animal Welfare (Jeev)</option>
+        <option value="Youth Development">Youth Development (Vikas)</option>
+        <option value="Fundraising">Fundraising / Donation</option>
+      </select>
+      <button class="btn-save-mem" onclick="saveUserMemory()">💾 Save Details</button>
+      <p class="mem-saved-msg" id="memorySavedMsg"></p>
+    </div>
+
+    <div class="memory-box">
+      <h3>Saved AI Chats</h3>
+      <div style="margin-bottom:14px;">
+        <button class="btn-save-mem" onclick="startNewChatFromMemory()">💬 Start New Chat</button>
+      </div>
+      <div id="savedChatsList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQs ===== -->
+<section id="faqs">
+  <div class="page-hero">
+    <div class="hero-badge">❓ Common Questions</div>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about InAmigos Foundation.</p>
+  </div>
+  <div class="faq-wrap">
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is InAmigos Foundation? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">InAmigos Foundation is a youth-led Section 8 registered NGO founded on September 23, 2020 by Mr. Govind Shukla. Operating from Bilaspur, Chhattisgarh, we work across 28 states of India through six flagship projects: Seva, Bachpanshala, Udaan, Prakriti, Jeev, and Vikas — transforming lives through education, hunger relief, women empowerment, environmental care, animal welfare, and youth development.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How can I volunteer with InAmigos? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">You can volunteer by filling out our volunteer registration form at the link below. Our team will review your application and get back to you. Click the "Volunteer With Us" button on the home page or visit forms.gle/AB4c1hLaDDmtrKGU7 to apply directly.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How can I join the InAmigos team? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">To join as a permanent team member, visit inamigosfoundation.org.in/became-volunteer. You can also click the "Join the Team" button on our home page. Team members get opportunities in leadership, project management, social media, events, and more.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How can I donate to InAmigos Foundation? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Click the "Donate Now" button on the top navigation bar. You can scan our UPI QR code or donate directly via Razorpay at rzp.io/l/kWQ87HP. We are 80G and 12A certified — your donations are eligible for tax exemption.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Who can join the internship programs? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Students and young professionals interested in social impact and skill development can apply for Project Vikas internships. We have already trained 30,000+ interns across India. Interns gain real-world experience, certificates, and professional networking opportunities.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What projects does InAmigos run? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">InAmigos runs six flagship projects: 🍚 Project Seva (food & clothing), 📚 Project Bachpanshala (education), 🦋 Project Udaan (women's empowerment), 🌳 Project Prakriti (environment), 🐾 Project Jeev (animal welfare), and 🚀 Project Vikas (youth development & internships).</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I participate remotely? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Yes! Certain activities — including Project Vikas internships, content creation, social media, awareness campaigns, and fundraising drives — can be done remotely. Reach out to us at support@inamigosfoundation.org.in to learn more.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is InAmigos a registered NGO? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Yes. InAmigos Foundation is a Section 8 registered NGO based in Bilaspur, Chhattisgarh. We hold 80G & 12A tax certifications, CSR-1 registration, NITI Aayog registration, and ISO 9001:2015 certification — ensuring full transparency and accountability.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How are donations used? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Your donations directly fund food distribution drives, school supplies for children, skill development programs for women, tree plantation campaigns, animal welfare activities, and internship infrastructure. We maintain complete transparency in fund utilisation.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="contact-hero">
+    <div class="hero-badge">📞 Get In Touch</div>
+    <h1>Contact InAmigos Foundation</h1>
+    <p>We'd love to hear from you — reach out for volunteering, donations, partnerships, or queries.</p>
+  </div>
+
+  <div class="contact-body">
+    <div class="contact-info">
+      <h2>Our Details</h2>
+
+      <div class="contact-detail">
+        <div class="cd-icon">📍</div>
+        <div>
+          <h5>Address</h5>
+          <p>Ward No. 5, Gram Post Sipat Ujwal Nagar,<br>Bilaspur, Chhattisgarh – 495555</p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="cd-icon">📞</div>
+        <div>
+          <h5>Phone</h5>
+          <a href="tel:+916267309902">+91 626 730 9902</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="cd-icon">✉️</div>
+        <div>
+          <h5>Email</h5>
+          <a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="cd-icon">🌐</div>
+        <div>
+          <h5>Website</h5>
+          <a href="https://inamigosfoundation.org.in" target="_blank">inamigosfoundation.org.in</a>
+        </div>
+      </div>
+
+      <div style="margin-top:24px;">
+        <p style="font-size:13px;color:var(--stone);margin-bottom:12px;font-weight:600;">FOLLOW US</p>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.instagram.com/inamigos/" target="_blank">📸 Instagram</a>
+          <a class="social-btn" href="https://www.facebook.com/inamigos.inamigos" target="_blank">📘 Facebook</a>
+          <a class="social-btn" href="#" target="_blank">💼 LinkedIn</a>
+          <a class="social-btn" href="#" target="_blank">▶️ YouTube</a>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;">
+        <button class="btn-primary" onclick="window.open('https://forms.gle/AB4c1hLaDDmtrKGU7','_blank')">🙋 Volunteer With Us</button>
+        &nbsp;
+        <button class="btn-secondary" onclick="openDonateModal()">❤️ Donate</button>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <div class="cf-field">
+        <label>Full Name</label>
+        <input type="text" id="cfName" placeholder="Your full name">
+      </div>
+      <div class="cf-field">
+        <label>Email Address</label>
+        <input type="email" id="cfEmail" placeholder="your@email.com">
+      </div>
+      <div class="cf-field">
+        <label>Subject</label>
+        <select id="cfSubject">
+          <option value="">Select subject</option>
+          <option>Volunteering Enquiry</option>
+          <option>Donation / Funding</option>
+          <option>Internship Program</option>
+          <option>Partnership / CSR</option>
+          <option>Media / Press</option>
+          <option>General Query</option>
+        </select>
+      </div>
+      <div class="cf-field">
+        <label>Message</label>
+        <textarea id="cfMsg" rows="4" placeholder="Tell us how we can help..."></textarea>
+      </div>
+      <button class="btn-primary" onclick="submitContactForm()" style="width:100%;">📨 Send Message</button>
+      <p id="cfSuccess" style="display:none; margin-top:14px; color:var(--amber); font-size:14px; font-weight:600;">✅ Thank you! We'll be in touch soon.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bar">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">In<span>Amigos</span> Foundation</div>
+        <p class="footer-tagline">Empowering Lives. Spreading Compassion. Building an India where everyone has the chance to thrive.</p>
+        <p class="footer-tagline" style="margin-top:6px;font-style:italic;color:rgba(255,255,255,0.4);">Together, we rise. Together, we heal. Together, we build.</p>
+        <div class="footer-tools" style="margin-top:14px;">
+          AI Tools Used: Claude · Groq API · ChatGPT<br>
+          Stack: HTML · CSS · JavaScript · Vercel
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Our Projects</h4>
+        <a onclick="showSection('works')">🍚 Project Seva</a>
+        <a onclick="showSection('works')">📚 Project Bachpanshala</a>
+        <a onclick="showSection('works')">🦋 Project Udaan</a>
+        <a onclick="showSection('works')">🌳 Project Prakriti</a>
+        <a onclick="showSection('works')">🐾 Project Jeev</a>
+        <a onclick="showSection('works')">🚀 Project Vikas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a onclick="showSection('home')">🏡 Home</a>
+        <a onclick="showSection('about')">📖 About Us</a>
+        <a onclick="showSection('impact')">📈 Impact</a>
+        <a onclick="showSection('faqs')">❓ FAQs</a>
+        <a onclick="openDonateModal()">❤️ Donate Now</a>
+        <a onclick="toggleChat()">🤖 AI Chat</a>
+        <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" target="_blank">🙋 Volunteer</a>
+        <a href="https://inamigosfoundation.org.in/became-volunteer" target="_blank">👥 Join Team</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 InAmigos Foundation. All Rights Reserved. &nbsp;·&nbsp; Section 8 NGO, Chhattisgarh &nbsp;·&nbsp; 80G & 12A Certified</div>
+    <div class="thanks-line">Made with 💛 by InAmigos volunteers</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== DONATE MODAL ===== -->
+<div class="modal-overlay" id="donateModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeDonateModal()">✕</button>
+    <h2>❤️ Support InAmigos</h2>
+    <p>Scan the QR code below or use UPI to donate. Every rupee creates real change.</p>
+
+    <div class="scanner-frame">
+      <img src="assets/upi-qr.png" alt="UPI QR Code" style="width:180px;height:180px;object-fit:contain;margin:0 auto;display:block;border-radius:12px;"
+           onerror="this.style.display='none'; document.getElementById('qrPlaceholder').style.display='block';">
+      <div id="qrPlaceholder" style="display:none;">
+        <span class="scan-icon">📱</span>
+        <strong>Add your QR code at assets/upi-qr.png</strong>
+        <p>Or share your UPI ID below</p>
+      </div>
+    </div>
+
+    <div class="upi-id">UPI: support@inamigosfoundation · +91 626 730 9902</div>
+
+    <p style="font-size:12px;color:var(--stone);margin-bottom:16px;">After scanning & paying, share the screenshot with us at<br><strong>support@inamigosfoundation.org.in</strong> — we'll send you an acknowledgement! 💛</p>
+
+    <div class="modal-btn-row">
+      <button class="modal-btn modal-btn-pay" onclick="window.open('https://rzp.io/l/kWQ87HP','_blank')">💳 Pay via Razorpay</button>
+      <button class="modal-btn modal-btn-close" onclick="closeDonateModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== AI CHAT WIDGET ===== -->
+<div class="chat-widget">
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-head">
+      <div class="chat-head-info">
+        <h4>🤖 InAmigos AI Assistant</h4>
+        <span>Ask me anything about InAmigos</span>
+      </div>
+      <button class="chat-close" onclick="closeChat()">✕</button>
+    </div>
+    <div class="chat-toolbar">
+      <button onclick="saveCurrentChat()">💾 Save Chat</button>
+      <button onclick="startNewChat()">🆕 New Chat</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs"></div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Ask about InAmigos..." onkeydown="if(event.key==='Enter') sendMsg();">
+      <button class="chat-send-btn" onclick="sendMsg()">Send</button>
+    </div>
+  </div>
+  <button class="chat-toggle-btn" onclick="toggleChat()" title="AI Chat">🤖</button>
+</div>
+
+<!-- ⚠️  config.js must load BEFORE app.js — it sets window.ENV with the API key -->
+<!-- config.js is in .gitignore so your key stays safe and off GitHub            -->
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
