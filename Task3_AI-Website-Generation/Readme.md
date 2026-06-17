@@ -119,16 +119,15 @@ The website showcases InAmigos Foundation's contribution through:
 ```text
 AI-Website-InAmigos/
 │
+├── Images
+├── Videos
 ├── index.html
 ├── style.css
 ├── script.js
-│
-├── assets/
-│   ├── logo.png
-│   ├── hero.jpg
-│   ├── scanner.png
-│   ├── videos/
-│   └── project-images/
+├── config.js
+├── package.json
+├── .env
+├── .gitignore
 │
 └── README.md
 ```
