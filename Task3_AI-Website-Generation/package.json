@@ -2,7 +2,7 @@
   "name": "inamigos-foundation",
   "version": "1.0.0",
   "description": "InAmigos Foundation webpage with Groq AI chat integration",
-  "main": "InAmigos_Foundation.html",
+  "main": "index.html",
   "scripts": {
     "start": "live-server",
     "dev": "live-server --port=3000"
