@@ -1,0 +1,32 @@
+# ===== ENVIRONMENT & SECRETS =====
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# Runtime config (contains API key for local dev — never commit!)
+config.js
+
+# ===== NODE MODULES (if applicable) =====
+node_modules/
+npm-debug.log*
+
+# ===== OS FILES =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== EDITOR FILES =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== BUILD OUTPUTS =====
+dist/
+build/
+
+# ===== LOGS =====
+*.log
+logs/
