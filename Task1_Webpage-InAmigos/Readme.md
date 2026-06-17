@@ -152,7 +152,7 @@ The webpage contains the following sections:
 
 **[Vani Vasantha Laxmi Yepparika]**
 
-Frontend Development Internship — Project Vikas
+AI Web Development Internship — Project Vikas
 InAmigos Foundation
 
 ---
