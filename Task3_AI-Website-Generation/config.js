@@ -3,7 +3,7 @@
 // =====================================================================
 /*  HOW IT WORKS:
   • For LOCAL development: manually paste your key below (never commit!).
- • For VERCEL / Netlify: set GROQ_API_KEY in their dashboard and use 
+  • For VERCEL / Netlify: set GROQ_API_KEY in their dashboard and use 
        a server function or build-time injection instead of this file. 
   • This file is listed in .gitignore so it won't be pushed to GitHub. */
 
