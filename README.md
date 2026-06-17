@@ -14,6 +14,7 @@ For more details, see:
 Task1_Wepage-InAmigos 📂
 
 ---
+
 ##📌 Task 2: Website Improvement Analysis – InAmigos Foundation
 
 As part of Task 2, a comprehensive review of the InAmigos Foundation website was conducted to evaluate its design, layout, content, and user experience. Screenshots were captured and improvement suggestions were provided to enhance usability, visual appeal, and visitor engagement.
@@ -21,13 +22,16 @@ As part of Task 2, a comprehensive review of the InAmigos Foundation website was
 🚀 The proposed improvements focus on website navigation, impact presentation, project showcases, donation accessibility, volunteer recognition, and content enhancement to create a more informative and user-friendly platform.
 
 For more details, see:
-Task2_Website-Improvement-InAmigos 📂
+Task2_Website-Improvement-analysis 📂
+
 ---
+
 ##📌 Task 3: AI Website Generation
 
 As part of Task 3, a complete website was generated using AI tools to showcase the mission, projects, impact, and activities of InAmigos Foundation through a modern, responsive, and user-friendly design.
 
 🤖 The website includes multiple sections such as Home, About Us, Our Works, Impact, FAQs, Contact, and an AI Chat Assistant to provide an interactive experience for visitors.
 
-For more details, see: Task3_AI_Website 📂
+For more details, see: Task3_AI-Website-Gemeration 📂
+
 ---
