@@ -1,11 +1,7 @@
 // ===== KEYS & CONFIG =====
-// ⚠️  API key is injected from config.js (which reads from .env via a build/server step).
-//     Never hardcode your API key here. Use window.ENV.GROQ_API_KEY instead.
 const DASH_KEY  = 'ia_dashboard';
 const MEM_KEY   = 'ia_memory';
 const CHATS_KEY = 'ia_chats';
-
-// API key is read from config.js (loaded before this script in index.html)
 const GROQ_API_KEY = (window.ENV && window.ENV.GROQ_API_KEY) || '';
 
 const IA_SYSTEM_PROMPT = `You are the InAmigos AI Assistant — the official chatbot of InAmigos Foundation, a youth-led Indian NGO.
