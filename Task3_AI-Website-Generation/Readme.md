@@ -9,7 +9,7 @@ A complete AI-generated NGO website created using AI-assisted web development te
 # Live Demo
 
 ## Vercel:
-https://webpage-inamigos.vercel.app/
+https://ai-chatbot-website-zeta.vercel.app/
 
 ---
 
