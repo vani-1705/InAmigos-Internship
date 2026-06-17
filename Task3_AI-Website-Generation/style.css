@@ -228,10 +228,12 @@ section.active { display: block; }
   border: 1.5px solid var(--rule); box-shadow: 0 2px 14px rgba(200,140,0,0.07);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.work-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(200,140,0,0.16); }
+.work-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,100,40,0.14); }
+.work-card-img {
+  width: 100%; height: 160px; object-fit: cover; display: block;
+}
 .work-card-bar { height: 5px; }
 .work-card-body { padding: 24px 20px; }
-.work-card-icon { font-size: 34px; margin-bottom: 12px; }
 .work-card h3 { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
 .work-card p { font-size: 13.5px; color: var(--stone); line-height: 1.7; }
 .work-card-tag { display: inline-block; margin-top: 12px; font-size: 11px; font-weight: 600; color: var(--amber); background: var(--gold-lt); padding: 3px 10px; border-radius: 20px; }
