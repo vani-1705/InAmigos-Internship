@@ -1,14 +1,14 @@
-# ===== ENVIRONMENT & SECRETS =====
+# ===== ENVIRONMENT VARIABLES =====
 .env
 .env.local
 .env.production
 .env.staging
 *.env
 
-# Runtime config (contains API key for local dev — never commit!)
+# Runtime config
 config.js
 
-# ===== NODE MODULES (if applicable) =====
+# ===== NODE MODULES =====
 node_modules/
 npm-debug.log*
 
