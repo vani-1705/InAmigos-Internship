@@ -239,6 +239,41 @@ section.active { display: block; }
 .work-card-tag { display: inline-block; margin-top: 12px; font-size: 11px; font-weight: 600; color: var(--amber); background: var(--gold-lt); padding: 3px 10px; border-radius: 20px; }
 
 /* ===== IMPACT ===== */
+.impact-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 36px 24px 20px;
+}
+.impact-cat-card {
+  background: white;
+  border-radius: 16px;
+  border: 1.5px solid #c2e8cf;
+  box-shadow: 0 2px 14px rgba(0,100,40,0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.impact-cat-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,100,40,0.15); }
+.impact-cat-img { width: 100%; height: 160px; object-fit: cover; display: block; }
+.impact-cat-body { padding: 18px 18px 20px; }
+.impact-cat-icon { font-size: 30px; margin-bottom: 8px; display: block; }
+.impact-cat-card h3 { font-size: 16px; font-weight: 700; color: #0a3020; margin-bottom: 10px; }
+.impact-cat-card p { font-size: 14px; color: #2a5a3a; line-height: 1.7; }
+.impact-overall { background: linear-gradient(135deg, #e8f8ef, #d0f0df); }
+.impact-numbers-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 700; color: #0a3020;
+  margin-bottom: 4px; padding: 24px 24px 0; text-align: center;
+}
+.impact-numbers { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; max-width: 900px; margin: 0 auto; padding: 20px 24px 40px; }
+.impact-num {
+  background: white; border-radius: 16px; padding: 32px 16px; text-align: center;
+  border: 1.5px solid #c2e8cf; box-shadow: 0 2px 14px rgba(0,100,40,0.08);
+}
+.impact-num h2 { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: #1a7a3a; margin-bottom: 8px; }
+.impact-num p { font-size: 13px; color: #4a7a5a; font-weight: 500; }
 .impact-numbers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 960px; margin: 0 auto; padding: 40px 24px; }
 .impact-num {
   background: white; border-radius: 16px; padding: 34px 16px; text-align: center;
