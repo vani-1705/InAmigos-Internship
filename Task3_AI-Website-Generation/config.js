@@ -8,6 +8,5 @@
   • This file is listed in .gitignore so it won't be pushed to GitHub. */
 
 window.ENV = {
-  GROQ_API_KEY: ''   // ← paste your Groq key here for local dev only
-                     //   (this file is in .gitignore — safe locally)
+  GROQ_API_KEY: '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'
 };
