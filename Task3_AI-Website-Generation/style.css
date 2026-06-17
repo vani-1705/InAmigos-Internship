@@ -268,17 +268,6 @@ section.active { display: block; }
   margin-bottom: 4px; padding: 24px 24px 0; text-align: center;
 }
 .impact-numbers { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; max-width: 900px; margin: 0 auto; padding: 20px 24px 40px; }
-.impact-num {
-  background: white; border-radius: 16px; padding: 32px 16px; text-align: center;
-  border: 1.5px solid #c2e8cf; box-shadow: 0 2px 14px rgba(0,100,40,0.08);
-}
-.impact-num h2 { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: #1a7a3a; margin-bottom: 8px; }
-.impact-num p { font-size: 13px; color: #4a7a5a; font-weight: 500; }
-.impact-numbers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 960px; margin: 0 auto; padding: 40px 24px; }
-.impact-num {
-  background: white; border-radius: 16px; padding: 34px 16px; text-align: center;
-  border: 1.5px solid var(--rule); box-shadow: 0 2px 14px rgba(200,140,0,0.08);
-}
 .impact-num h2 { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 900; color: var(--gold-dk); margin-bottom: 8px; }
 .impact-num p { font-size: 13px; color: var(--stone); font-weight: 500; }
 .impact-why { max-width: 960px; margin: 0 auto; padding: 0 24px 52px; }
